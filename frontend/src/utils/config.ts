@@ -1,0 +1,9 @@
+// Stores the frontend environment configuration for the backend API and Cloudinary image uploads.
+
+export const config = {
+  baseUrl: import.meta.env.VITE_BASE_URL,
+  VITE_CLOUDINARY_CLOUD_NAME: import.meta.env.VITE_CLOUDINARY_CLOUD_NAME,
+  VITE_CLOUDINARY_API_KEY: import.meta.env.VITE_CLOUDINARY_API_KEY,
+  VITE_CLOUDINARY_API_SECRET: import.meta.env.VITE_CLOUDINARY_API_SECRET,
+  VITE_CLOUDINARY_UPLOAD_PRESET: import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET,
+}
