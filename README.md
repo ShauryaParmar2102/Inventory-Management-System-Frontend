@@ -249,27 +249,127 @@ The backend is built using:
 
 ---
 
-# 📚 Attribution
+# 🔗 Using the Frontend and Backend Together
 
-This project is based on the open-source **Inventory Management System** created by **Mehdi Hasan Shohan**.
+This Inventory Management System is split into two repositories:
 
-The original project is licensed under the **MIT License**.
+- ⚛️ **Frontend** — React, TypeScript, Redux Toolkit and RTK Query
+- 🟢 **Backend** — Node.js, Express, TypeScript and MongoDB
 
-I used the project as a learning reference while studying, implementing, debugging, documenting and modifying the frontend.
+To run the complete full-stack application, both repositories are required.
 
-While working on the project, I practiced React and TypeScript development, state management, API integration, debugging, testing and modifying parts of the user interface and navigation.
+## 1️⃣ Create a Project Folder
 
-The original copyright and MIT License notice are retained in accordance with the project's license.
+Create a folder for the complete application:
 
----
+```bash
+mkdir inventory-management-system
+cd inventory-management-system
+```
 
-# 📜 License
+## 2️⃣ Clone the Frontend
 
-This project contains code based on software released under the **MIT License**.
+Clone the frontend repository into a folder called `frontend`:
 
-See the `LICENSE` file for the original copyright and license notice.
+```bash
+git clone YOUR_FRONTEND_REPOSITORY_URL frontend
+```
 
----
+## 3️⃣ Clone the Backend
+
+Clone the backend repository into a folder called `backend`:
+
+```bash
+git clone YOUR_BACKEND_REPOSITORY_URL backend
+```
+
+Your project should now look like:
+
+```text
+inventory-management-system/
+│
+├── frontend/
+│   ├── src/
+│   ├── package.json
+│   └── ...
+│
+└── backend/
+    ├── src/
+    ├── package.json
+    └── ...
+```
+
+## 4️⃣ Install Dependencies
+
+Install the frontend dependencies:
+
+```bash
+cd frontend
+npm install
+```
+
+Then install the backend dependencies:
+
+```bash
+cd ../backend
+npm install
+```
+
+## 5️⃣ Configure Environment Variables
+
+Create the required `.env` files for both the frontend and backend.
+
+### Frontend `.env`
+
+```env
+VITE_BASE_URL=http://localhost:8000/api/v1
+VITE_CLOUDINARY_CLOUD_NAME=your_cloud_name
+VITE_CLOUDINARY_API_KEY=your_api_key
+VITE_CLOUDINARY_UPLOAD_PRESET=your_upload_preset
+```
+
+### Backend `.env`
+
+```env
+NODE_ENV=development
+PORT=8000
+DATABASE_URL=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+```
+
+> ⚠️ Environment files are not included in the repositories because they may contain private credentials.
+
+## 6️⃣ Run the Application
+
+Make sure MongoDB is running.
+
+Open one terminal for the backend:
+
+```bash
+cd backend
+npm run dev
+```
+
+Then open another terminal for the frontend:
+
+```bash
+cd frontend
+npm run dev
+```
+
+The frontend will normally run at:
+
+```text
+http://localhost:5173
+```
+
+The backend API will normally run at:
+
+```text
+http://localhost:8000/api/v1
+```
+
+Both applications need to be running for the complete Inventory Management System to work.
 
 # 👨‍💻 Author
 
