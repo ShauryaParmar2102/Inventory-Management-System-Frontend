@@ -1,43 +1,50 @@
-# 📦 Inventory Management System
+# 📦 Inventory Management System — Frontend
 
-A full-stack **Inventory Management System** built using React, TypeScript, Node.js, Express and MongoDB.
+The frontend for a full-stack **Inventory Management System**, built with **React, TypeScript and Vite**.
 
-This project was completed as a learning project to practice working with both the **frontend and backend** of a modern web application.
+This project was completed as a learning project to practice building a modern frontend, managing application state, communicating with a REST API and working with a larger React codebase.
 
 ---
 
 ## 📦 About the App
 
-The **Inventory Management System** is a full-stack web application designed to help manage inventory, stock and sales through one dashboard.
+The Inventory Management System is an internal dashboard for managing inventory and sales.
 
-Users can manage products, categories, brands and sellers, add stock, record purchases and sales, and view sales reports and revenue statistics.
+The frontend provides the user interface for:
 
-The application connects a **React and TypeScript frontend** to a **Node.js and Express backend**, with **MongoDB** used to store users, products, inventory and sales data.
+- 📊 Viewing inventory statistics
+- ➕ Creating products
+- 📦 Managing products
+- 📥 Adding product stock
+- 🏷️ Managing categories and brands
+- 👤 Managing sellers
+- 🛒 Viewing and managing purchases
+- 💰 Recording and managing sales
+- 📈 Viewing sales reports
+- 💵 Tracking sales and revenue
+- 👤 Managing user profiles
+- 🔐 Registering and logging in
 
-It is designed as an **internal inventory management dashboard** rather than a customer-facing online store.
+The frontend communicates with a separate **Node.js and Express REST API**, which handles the application's backend logic and MongoDB database operations.
 
 ---
 
-## 🚀 Features
+# 🚀 Features
 
 - 🔐 User registration and login
-- 🛡️ JWT authentication and protected routes
+- 🛡️ Protected routes
 - 📊 Inventory dashboard
-- ➕ Create products
-- 📦 Manage products
-- 🏷️ Manage categories and brands
-- 👤 Manage sellers
-- 📥 Add stock to products
-- 💰 Record product sales
-- 🛒 Manage purchases
-- ✏️ Update inventory information
-- 🗑️ Delete inventory records
-- 🔎 Search products and records
+- ➕ Product creation
+- 📦 Product management
+- 📥 Stock management
+- 🏷️ Category and brand management
+- 👤 Seller management
+- 🛒 Purchase management
+- 💰 Sales management
+- 🔎 Search and filtering
 - 📄 Pagination
-- 📈 Daily sales reports
-- 📈 Weekly sales reports
-- 📈 Monthly sales reports
-- 📈 Yearly sales reports
+- 🪟 Modals
+- 📈 Sales charts and reports
 - 💵 Revenue statistics
 - 👤 User profile management
 - 🔑 Change password
@@ -45,8 +52,6 @@ It is designed as an **internal inventory management dashboard** rather than a c
 ---
 
 # 🧠 What I Practiced
-
-Working on this project gave me experience with frontend development, backend development, databases, APIs and debugging a complete full-stack application.
 
 ## ⚛️ Frontend Development
 
@@ -68,83 +73,20 @@ I practiced:
 
 ---
 
-## 🟢 Backend Development
-
-I practiced:
-
-- 🟢 Building a backend with **Node.js**
-- 🚂 Creating REST APIs with **Express**
-- 🔷 Using **TypeScript** on the backend
-- 🛣️ Creating API routes
-- 🎮 Working with controllers
-- ⚙️ Separating application logic into services
-- 🍃 Working with **MongoDB and Mongoose**
-- 🔐 Implementing authentication
-- 🎟️ Working with **JSON Web Tokens (JWT)**
-- 🔑 Hashing passwords with **bcrypt**
-- ✅ Validating data with **Zod**
-- 📦 Implementing CRUD operations
-- 📊 Creating sales reporting endpoints
-- 🐛 Debugging backend and API problems
-
----
-
-## 🔗 Full-Stack Development
+## 🔗 Working With a Backend API
 
 I also practiced:
 
-- 🔄 Connecting the React frontend to the Express backend
-- 🌐 Sending and receiving data through REST APIs
-- 🍃 Storing and retrieving data with MongoDB
-- 🔐 Connecting frontend authentication with backend JWT authentication
-- 📦 Managing products, stock, sellers, purchases and sales
-- 🧠 Tracing data through the frontend, API and database
-- 🐛 Debugging problems across the full application
-
----
-
-## 🍃 Database
-
-I practiced working with:
-
-- 🍃 **MongoDB**
-- 🔗 **Mongoose**
-- 📄 MongoDB documents
-- 🗃️ Database models
-- 🔍 Querying data
-- ➕ Creating records
-- ✏️ Updating records
-- 🗑️ Deleting records
-- 📦 Managing inventory data
-- 📈 Retrieving data for reports
-
----
-
-## 🔄 How the Full-Stack Application Connects
-
-One of the main things I practiced was understanding how the different parts of a full-stack application communicate.
-
-The general data flow is:
-
-```text
-React UI
-    ↓
-Redux / RTK Query
-    ↓
-REST API
-    ↓
-Express Routes
-    ↓
-Controllers
-    ↓
-Services
-    ↓
-Mongoose
-    ↓
-MongoDB
-```
-
-This helped me understand how an action on the frontend can travel through an API, change information in the database and then update the interface.
+- 🌐 Connecting React to a REST API
+- 📤 Sending data to the backend
+- 📥 Retrieving data from the backend
+- 🔄 Using RTK Query queries and mutations
+- 🔐 Handling authentication from the frontend
+- 🎟️ Working with JWT authentication
+- 📦 Displaying database information in React
+- 🔄 Updating the interface after API changes
+- ❌ Handling API errors
+- 🐛 Debugging communication between the frontend and backend
 
 ---
 
@@ -155,15 +97,13 @@ Debugging was an important part of working on this project.
 I practiced:
 
 - 🔎 Reading TypeScript compiler errors
-- 🧭 Tracing problems between different files
 - ⚛️ Debugging React components
-- 🌐 Debugging API requests
-- 🟢 Debugging Express routes
-- 🍃 Debugging MongoDB/Mongoose issues
 - 📦 Fixing missing packages and imports
+- 🌐 Debugging API requests
 - 🔐 Debugging authentication
 - 🔄 Debugging Redux and RTK Query
-- 🧪 Testing frontend and backend functionality
+- 🧭 Tracing problems between different files
+- 🧪 Testing application functionality
 - 🧠 Reading and understanding an existing codebase
 - 🛠️ Modifying existing functionality
 
@@ -171,127 +111,96 @@ I practiced:
 
 # 🛠️ Tech Stack
 
-## 💻 Frontend
-
 ![React](https://img.shields.io/badge/React-Frontend-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Language-blue)
 ![Vite](https://img.shields.io/badge/Vite-Build_Tool-purple)
 ![Redux](https://img.shields.io/badge/Redux_Toolkit-State_Management-purple)
 ![Ant Design](https://img.shields.io/badge/Ant_Design-UI-blue)
 
-- React
-- TypeScript
-- Vite
-- Redux Toolkit
-- RTK Query
-- React Router
-- React Hook Form
-- Ant Design
-- Recharts
-
-## 🖥️ Backend
-
-![Node.js](https://img.shields.io/badge/Node.js-Backend-green)
-![Express](https://img.shields.io/badge/Express-REST_API-black)
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-green)
-
-- Node.js
-- Express
-- TypeScript
-- MongoDB
-- Mongoose
-- Zod
-- JSON Web Tokens
-- bcrypt
+- ⚛️ React
+- 🔷 TypeScript
+- ⚡ Vite
+- 🔄 Redux Toolkit
+- 🌐 RTK Query
+- 🧭 React Router
+- 📝 React Hook Form
+- 🎨 Ant Design
+- 📊 Recharts
 
 ---
 
-# 📂 Project Structure
+# 🔄 How the Frontend Connects
+
+The frontend sends requests to the backend REST API using RTK Query.
 
 ```text
-inventory-management-system/
+React Components
+       ↓
+Redux / RTK Query
+       ↓
+REST API
+       ↓
+Node.js / Express Backend
+       ↓
+MongoDB
+```
+
+For example, when a user creates a product, the frontend collects the form data and sends it to the backend API. The backend stores the product in MongoDB and sends a response back to the frontend.
+
+---
+
+# 📂 Frontend Structure
+
+```text
+inventory-management-system-frontend/
 │
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── redux/
-│   │   ├── routes/
-│   │   └── types/
-│   │
-│   └── package.json
+├── public/
 │
-├── backend/
-│   ├── src/
-│   │   ├── modules/
-│   │   ├── routes/
-│   │   ├── middleware/
-│   │   └── utils/
-│   │
-│   └── package.json
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── redux/
+│   ├── routes/
+│   ├── types/
+│   └── ...
 │
-├── LICENSE
+├── package.json
+├── package-lock.json
+├── tsconfig.json
 └── README.md
 ```
 
-> `.env` files are not included in the repository because they can contain private configuration and credentials.
-
 ---
 
-# ⚙️ Running the Project
+# ⚙️ Running the Frontend
 
 ## 1️⃣ Clone the Repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone YOUR_FRONTEND_REPOSITORY_URL
 ```
 
-Then enter the project:
+Enter the project:
 
 ```bash
-cd inventory-management-system
+cd inventory-management-system-frontend
 ```
 
-## 2️⃣ Install Backend Dependencies
+## 2️⃣ Install Dependencies
 
 ```bash
-cd backend
 npm install
 ```
 
-## 3️⃣ Backend Environment Variables
+This will install all required packages into `node_modules`.
 
-Create a `.env` file inside the `backend` directory:
+> `node_modules` is not included in the GitHub repository.
 
-```env
-NODE_ENV=development
-PORT=8000
-DATABASE_URL=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-```
+---
 
-> ⚠️ Never commit your real `.env` file to GitHub.
+## 3️⃣ Configure Environment Variables
 
-## 4️⃣ Start the Backend
-
-```bash
-npm run dev
-```
-
-The backend API will run locally on port `8000`.
-
-## 5️⃣ Install Frontend Dependencies
-
-Open another terminal:
-
-```bash
-cd frontend
-npm install
-```
-
-## 6️⃣ Frontend Environment Variables
-
-Create a `.env` file inside the `frontend` directory:
+Create a `.env` file in the project root:
 
 ```env
 VITE_BASE_URL=http://localhost:8000/api/v1
@@ -300,13 +209,65 @@ VITE_CLOUDINARY_API_KEY=your_api_key
 VITE_CLOUDINARY_UPLOAD_PRESET=your_upload_preset
 ```
 
-## 7️⃣ Start the Frontend
+> ⚠️ The real `.env` file should not be committed to GitHub.
+
+---
+
+## 4️⃣ Start the Frontend
 
 ```bash
 npm run dev
 ```
 
-The Vite development server will normally run on port `5173`.
+The Vite development server will normally start at:
+
+```text
+http://localhost:5173
+```
+
+The backend API must also be running for features that require server data.
+
+---
+
+# 🔗 Backend
+
+This frontend is part of a full-stack Inventory Management System.
+
+The backend is maintained in a separate repository:
+
+**Backend Repository:** `ADD_YOUR_BACKEND_REPOSITORY_LINK_HERE`
+
+The backend is built using:
+
+- 🟢 Node.js
+- 🚂 Express
+- 🔷 TypeScript
+- 🍃 MongoDB
+- 🔗 Mongoose
+- 🔐 JWT authentication
+- ✅ Zod
+
+---
+
+# 📚 Attribution
+
+This project is based on the open-source **Inventory Management System** created by **Mehdi Hasan Shohan**.
+
+The original project is licensed under the **MIT License**.
+
+I used the project as a learning reference while studying, implementing, debugging, documenting and modifying the frontend.
+
+While working on the project, I practiced React and TypeScript development, state management, API integration, debugging, testing and modifying parts of the user interface and navigation.
+
+The original copyright and MIT License notice are retained in accordance with the project's license.
+
+---
+
+# 📜 License
+
+This project contains code based on software released under the **MIT License**.
+
+See the `LICENSE` file for the original copyright and license notice.
 
 ---
 
