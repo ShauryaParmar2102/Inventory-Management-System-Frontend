@@ -4,7 +4,17 @@ A full-stack **Inventory Management System** built using React, TypeScript, Node
 
 This project was completed as a learning project to practice working with both the **frontend and backend** of a modern web application.
 
-The system allows users to manage products, stock, sellers, purchases and sales through an inventory dashboard.
+---
+
+## 📦 About the App
+
+The **Inventory Management System** is a full-stack web application designed to help manage inventory, stock and sales through one dashboard.
+
+Users can manage products, categories, brands and sellers, add stock, record purchases and sales, and view sales reports and revenue statistics.
+
+The application connects a **React and TypeScript frontend** to a **Node.js and Express backend**, with **MongoDB** used to store users, products, inventory and sales data.
+
+It is designed as an **internal inventory management dashboard** rather than a customer-facing online store.
 
 ---
 
@@ -33,6 +43,10 @@ The system allows users to manage products, stock, sellers, purchases and sales 
 - 🔑 Change password
 
 ---
+
+# 🧠 What I Practiced
+
+Working on this project gave me experience with frontend development, backend development, databases, APIs and debugging a complete full-stack application.
 
 ## ⚛️ Frontend Development
 
@@ -87,6 +101,8 @@ I also practiced:
 - 🧠 Tracing data through the frontend, API and database
 - 🐛 Debugging problems across the full application
 
+---
+
 ## 🍃 Database
 
 I practiced working with:
@@ -104,32 +120,31 @@ I practiced working with:
 
 ---
 
-## 🔄 Full-Stack Development
+## 🔄 How the Full-Stack Application Connects
 
-One of the main things I practiced was understanding how the different
-parts of a full-stack application communicate.
+One of the main things I practiced was understanding how the different parts of a full-stack application communicate.
 
 The general data flow is:
 
-    React UI
-        ↓
-    Redux / RTK Query
-        ↓
-    REST API
-        ↓
-    Express Routes
-        ↓
-    Controllers
-        ↓
-    Services
-        ↓
-    Mongoose
-        ↓
-    MongoDB
+```text
+React UI
+    ↓
+Redux / RTK Query
+    ↓
+REST API
+    ↓
+Express Routes
+    ↓
+Controllers
+    ↓
+Services
+    ↓
+Mongoose
+    ↓
+MongoDB
+```
 
-This helped me understand how an action on the frontend can travel
-through an API, change information in the database and then update
-the interface.
+This helped me understand how an action on the frontend can travel through an API, change information in the database and then update the interface.
 
 ---
 
@@ -145,7 +160,7 @@ I practiced:
 - 🌐 Debugging API requests
 - 🟢 Debugging Express routes
 - 🍃 Debugging MongoDB/Mongoose issues
-- 📦 Fixing missing package/import problems
+- 📦 Fixing missing packages and imports
 - 🔐 Debugging authentication
 - 🔄 Debugging Redux and RTK Query
 - 🧪 Testing frontend and backend functionality
@@ -193,31 +208,33 @@ I practiced:
 
 # 📂 Project Structure
 
-    inventory-management-system/
-    │
-    ├── frontend/
-    │   ├── src/
-    │   │   ├── components/
-    │   │   ├── pages/
-    │   │   ├── redux/
-    │   │   ├── routes/
-    │   │   └── types/
-    │   │
-    │   ├── package.json
-    │   └── .env
-    │
-    ├── backend/
-    │   ├── src/
-    │   │   ├── modules/
-    │   │   ├── routes/
-    │   │   ├── middleware/
-    │   │   └── utils/
-    │   │
-    │   ├── package.json
-    │   └── .env
-    │
-    ├── LICENSE
-    └── README.md
+```text
+inventory-management-system/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── redux/
+│   │   ├── routes/
+│   │   └── types/
+│   │
+│   └── package.json
+│
+├── backend/
+│   ├── src/
+│   │   ├── modules/
+│   │   ├── routes/
+│   │   ├── middleware/
+│   │   └── utils/
+│   │
+│   └── package.json
+│
+├── LICENSE
+└── README.md
+```
+
+> `.env` files are not included in the repository because they can contain private configuration and credentials.
 
 ---
 
@@ -225,69 +242,69 @@ I practiced:
 
 ## 1️⃣ Clone the Repository
 
-    git clone YOUR_REPOSITORY_URL
+```bash
+git clone YOUR_REPOSITORY_URL
+```
 
 Then enter the project:
 
-    cd inventory-management-system
-
----
+```bash
+cd inventory-management-system
+```
 
 ## 2️⃣ Install Backend Dependencies
 
-    cd backend
-    npm install
-
----
+```bash
+cd backend
+npm install
+```
 
 ## 3️⃣ Backend Environment Variables
 
-Create a `.env` file inside the `backend` directory.
+Create a `.env` file inside the `backend` directory:
 
-Example:
-
-    NODE_ENV=development
-    PORT=8000
-    DATABASE_URL=your_mongodb_connection_string
-    JWT_SECRET=your_jwt_secret
+```env
+NODE_ENV=development
+PORT=8000
+DATABASE_URL=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+```
 
 > ⚠️ Never commit your real `.env` file to GitHub.
 
----
-
 ## 4️⃣ Start the Backend
 
-    npm run dev
+```bash
+npm run dev
+```
 
-The API will run locally on port `8000`.
-
----
+The backend API will run locally on port `8000`.
 
 ## 5️⃣ Install Frontend Dependencies
 
 Open another terminal:
 
-    cd frontend
-    npm install
-
----
+```bash
+cd frontend
+npm install
+```
 
 ## 6️⃣ Frontend Environment Variables
 
-Create a `.env` file inside the `frontend` directory.
+Create a `.env` file inside the `frontend` directory:
 
-Example:
-
-    VITE_BASE_URL=http://localhost:8000/api/v1
-    VITE_CLOUDINARY_CLOUD_NAME=your_cloud_name
-    VITE_CLOUDINARY_API_KEY=your_api_key
-    VITE_CLOUDINARY_UPLOAD_PRESET=your_upload_preset
-
----
+```env
+VITE_BASE_URL=http://localhost:8000/api/v1
+VITE_CLOUDINARY_CLOUD_NAME=your_cloud_name
+VITE_CLOUDINARY_API_KEY=your_api_key
+VITE_CLOUDINARY_UPLOAD_PRESET=your_upload_preset
+```
 
 ## 7️⃣ Start the Frontend
 
-    npm run dev
+```bash
+npm run dev
+```
 
 The Vite development server will normally run on port `5173`.
 
@@ -298,3 +315,5 @@ The Vite development server will normally run on port `5173`.
 **Shaurya Parmar**
 
 Web Development Student
+
+Interested in **frontend, backend and full-stack web development**.
