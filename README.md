@@ -34,27 +34,21 @@ The system allows users to manage products, stock, sellers, purchases and sales 
 
 ---
 
-# 🧠 What I Practiced
-
-Building this project gave me experience working across a complete
-full-stack application.
-
 ## ⚛️ Frontend Development
 
 I practiced:
 
 - ⚛️ Building interfaces with **React**
 - 🔷 Using **TypeScript** with React
-- 🧩 Creating and working with reusable components
+- 🧩 Creating reusable components
 - 🧭 Navigation with **React Router**
 - 🔒 Creating protected routes
 - 📝 Building and validating forms with **React Hook Form**
 - 🎨 Building dashboard interfaces with **Ant Design**
 - 📊 Displaying data with **Recharts**
-- 🔄 Managing application state with **Redux Toolkit**
+- 🔄 Managing state with **Redux Toolkit**
 - 🌐 Making API requests with **RTK Query**
-- 🔎 Implementing search and filtering
-- 📄 Working with pagination
+- 🔎 Implementing search, filtering and pagination
 - 🪟 Working with modals
 - 🐛 Debugging React and TypeScript errors
 
@@ -65,21 +59,33 @@ I practiced:
 I practiced:
 
 - 🟢 Building a backend with **Node.js**
-- 🚂 Creating a REST API with **Express**
+- 🚂 Creating REST APIs with **Express**
 - 🔷 Using **TypeScript** on the backend
 - 🛣️ Creating API routes
 - 🎮 Working with controllers
 - ⚙️ Separating application logic into services
-- 🗃️ Creating database models
+- 🍃 Working with **MongoDB and Mongoose**
 - 🔐 Implementing authentication
-- 🎟️ Working with JSON Web Tokens (JWT)
-- 🔑 Hashing passwords with bcrypt
-- ✅ Validating data with Zod
-- ❌ Handling API errors
+- 🎟️ Working with **JSON Web Tokens (JWT)**
+- 🔑 Hashing passwords with **bcrypt**
+- ✅ Validating data with **Zod**
+- 📦 Implementing CRUD operations
 - 📊 Creating sales reporting endpoints
 - 🐛 Debugging backend and API problems
 
 ---
+
+## 🔗 Full-Stack Development
+
+I also practiced:
+
+- 🔄 Connecting the React frontend to the Express backend
+- 🌐 Sending and receiving data through REST APIs
+- 🍃 Storing and retrieving data with MongoDB
+- 🔐 Connecting frontend authentication with backend JWT authentication
+- 📦 Managing products, stock, sellers, purchases and sales
+- 🧠 Tracing data through the frontend, API and database
+- 🐛 Debugging problems across the full application
 
 ## 🍃 Database
 
